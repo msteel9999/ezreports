@@ -4,10 +4,10 @@
 
 //Line Chart
 $(function () {
-    if ($('#line-chart')[0]) {
+    if ($('#linechart')[0]) {
         var d1 = [[1,14], [2,15], [3,18], [4,16], [5,19], [6,17], [7,15], [8,16], [9,20], [10,16], [11,18]];
 
-        $.plot('#line-chart', [ {
+        $.plot('#linechart', [ {
             data: d1,
             label: "Data"
 
@@ -62,7 +62,7 @@ $(function () {
                 }
             });
 
-        $("#line-chart").bind("plothover", function (event, pos, item) {
+        $("#linechart").bind("plothover", function (event, pos, item) {
             if (item) {
                 var x = item.datapoint[0].toFixed(2),
                     y = item.datapoint[1].toFixed(2);

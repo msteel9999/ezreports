@@ -1,3 +1,4 @@
+
 <div class="container" id="skin-blur-ocean">
         <header id="header" class="media">
             <a href="" id="menu-toggle"></a>
@@ -395,7 +396,6 @@
                 <h4 class="page-title">CHARTS</h4>
 
                 <div class="block-area">
-                  <div ng-controller="FlotCtrl">
                       <h3 class="block-title">FLOT CHART</h3>
 
                       <div class="tile">
@@ -407,11 +407,9 @@
                                   <li><a href="">Settings</a></li>
                               </ul>
                           </div>
-                        <flot dataset="dataset" options="options"></flot>
-                        <div id="legend" style="height: 250px;"></div>
-
+                        <div ng-include="'components/flotcharts/linechart/linechart.html'"></div>
                           <!--<div class="p-10">-->
-                              <!--<div id="line-chart" class="main-chart" style="height: 250px"></div>-->
+                              <!--<div id="linechart" class="main-chart" style="height: 250px"></div>-->
                           <!--</div>-->
                       </div>
 
@@ -478,7 +476,6 @@
                               </div>
                           </div>
                       </div>
-                    </div>
                 </div>
 
                 <hr class="whiter m-t-20 m-b-20" />

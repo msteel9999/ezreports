@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('ezreportsApp').controller('FlotChartsCtrl', function ($scope) {
-  $scope.dataset = [[1,14], [2,15], [3,18], [4,16], [5,19], [6,17], [7,15], [8,16], [9,20], [10,16], [11,18]];
+angular.module('ezreportsApp').controller('LineChartCtrl', function ($scope) {
+  $scope.dataset = [{ data: [[1,14], [2,15], [3,18], [4,16], [5,19], [6,17], [7,15], [8,16], [9,20], [10,16], [11,18]] }];
   $scope.options = {
     series: {
       lines: {
